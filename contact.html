@@ -1,0 +1,136 @@
+<html>
+
+	<head>
+		<title>Devis'me - Contact</title>
+		
+		<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" /> <!--insertion d'un image dans la barre de navigation  -->
+		<link href="style_bis.css" rel="stylesheet" media="all" type="text/css"> <!-- Importation CSS_bis -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all" type="text/css"> <!-- Importation CSS -->
+		<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8"> <!-- Information sur lécriture -->
+	</head>
+
+	<body>
+		<div id="tete"> <!-- en tête de la page -->
+			<nav class="navbar navbar-default" role="navigation">
+				  <div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  <div class="navbar-brand navbar-brand-centered"><a href="index.html">Devis'Me</a></div>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="navbar-brand-centered">
+						  <ul class="nav navbar-nav">
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="devis.html">Application</a></li>
+							<li><a href="catalogue.html">Catalogue</a></li>
+						  </ul>
+						  <ul class="nav navbar-nav navbar-right">
+							<li><a href="client.html">Espace client</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="plugin.html">Gestion plug-in</a></li>		        
+						  </ul>
+						</div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+			</nav>	
+		</div>
+
+	
+	
+		
+		<div id="cadre"> <!-- corps de la page  -->
+			<div class="jumbotron jumbotron-sm">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-lg-12">
+							<h1 class="h1">
+								Contactez nous <small>Feel free to contact us</small></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="well well-sm">
+							<form>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="name">
+											Name</label>
+										<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+									</div>
+									<div class="form-group">
+										<label for="email">
+											Email Address</label>
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+											</span>
+											<input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+									</div>
+									<div class="form-group">
+										<label for="subject">
+											Subject</label>
+										<select id="subject" name="subject" class="form-control" required="required">
+											<option value="na" selected="">Choose One:</option>
+											<option value="service">General Customer Service</option>
+											<option value="suggestions">Suggestions</option>
+											<option value="product">Product Support</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="name">
+											Message</label>
+										<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+											placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+										Send Message</button>
+								</div>
+							</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<form>
+						<legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+						<address>
+							<strong>Twitter, Inc.</strong><br>
+							795 Folsom Ave, Suite 600<br>
+							San Francisco, CA 94107<br>
+							<abbr title="Phone">
+								P:</abbr>
+							(123) 456-7890
+						</address>
+						<address>
+							<strong>Full Name</strong><br>
+							<a href="mailto:#">first.last@example.com</a>
+						</address>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div><br/>
+		<div id="pied"> <!-- en tête de la page -->
+			<p>Copyright © 2015 Devis'Me - All rights reserved. 
+				<a href="#"><span class="label label-info">HTML5</span></a> 
+				<a href="#"><span class="label label-info">CSS3</span></a> 
+				<a href="#"><span class="label label-info">Bootstrap</span></a> 
+				<a href="#"><span class="label label-info">PHP5</span></a>
+				| <i class="icon-user"></i> <a href="contact.html">Page d'accueil</a> 
+				| <i class="icon-user"></i> <a href="contact.html">Contact</a> 
+				| <i class="icon-calendar"></i> feb 5th, 2015 at 4:20 pm
+		</div>
+	</body>
+</html>
