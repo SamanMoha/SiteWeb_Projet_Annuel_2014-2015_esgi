@@ -10,17 +10,17 @@
 	</head>
 
 	<body>
-		<div id="tete"><?php include("entete.html"); ?></div><!-- en tête de la page -->
+		<div id="tete"><?php include("entete.php"); ?></div><!-- en tête de la page -->
 		<div id="cadre"> <!-- corps de la page  -->
 			<div class="grostitre">Manuel d'utilisation de l'application Devis'Me</div>
 			<br/><br/>
 			<div class="container">
 				<div class="row">
-					<h2>Documentation</h2>
+					<h2>Documentation technique</h2>
 					<div class="col-md-6">
 						<div class="blockquote-box clearfix">
 							<div class="square pull-left">
-								<img src="http://acee.princeton.edu/distillates/files/2014/05/technology-icon-black.png" alt="" class="" />
+								<img src="img/1.png" alt="" class="" />
 							</div>
 							<h4>Introduction</h4>
 							<p>
@@ -30,7 +30,7 @@
 						</div>
 						<div class="blockquote-box blockquote-primary clearfix">
 							<div class="square pull-left">
-								<img src="http://www.brightcomputing.com/pics/cdadapco_logo_50.png" alt="" class="" />
+								<img src="img/2.png" alt="" class="" />
 							</div>
 							<h4>Installation</h4>
 							<p>
@@ -40,7 +40,7 @@
 						</div>
 						<div class="blockquote-box blockquote-success clearfix">
 							<div class="square pull-left">
-								<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/WHATWG_logo.svg/64px-WHATWG_logo.svg.png" alt="" class="" />
+								<img src="img/3.png" alt="" class="" />
 							</div>
 							<h4>Premier pas</h4>
 							<p>
@@ -52,9 +52,9 @@
 					<div class="col-md-6">
 						<div class="blockquote-box blockquote-info clearfix">
 							<div class="square pull-left">
-								<img src="http://www.pylint.org/assets/img/arch.png" alt="" class="" />
+								<img src="img/4.png" alt="" class="" />
 							</div>
-							<h4>Exporter / Importer un projet</h4>
+							<h4>Sauvegarder/Ouvrir un projet</h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
 								ante.
@@ -62,9 +62,9 @@
 						</div>
 						<div class="blockquote-box blockquote-warning clearfix">
 							<div class="square pull-left">
-								<span class="glyphicon glyphicon-warning-sign glyphicon-lg"></span>
+								<img src="img/5.png" alt="" class="" />
 							</div>
-							<h4>Warning</h4>
+							<h4>Installer un plugin</h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
 								ante.
@@ -72,7 +72,7 @@
 						</div>
 						<div class="blockquote-box blockquote-danger clearfix">
 							<div class="square pull-left">
-								<span class="glyphicon glyphicon-record glyphicon-lg"></span>
+								<img src="img/6.png" alt="" class="" />
 							</div>
 							<h4>
 								Danger</h4>

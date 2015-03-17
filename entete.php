@@ -1,5 +1,7 @@
+<?php
+include('config.php');
+?>
 <html>
-
 	<body>
 		<nav class="navbar navbar-default" role="navigation">
 				  <div class="container">
@@ -22,9 +24,21 @@
 							<li><a href="catalogue.php">Catalogue</a></li>
 						  </ul>
 						  <ul class="nav navbar-nav navbar-right">
-							<li><a href="client.php">Espace client</a></li>
 							<li><a href="contact.php">Contact</a></li>
-							<li><a href="plugin.php">Gestion plug-in</a></li>		        
+							<li><a href="plugin.php">Gestion plug-in</a></li>	
+							<?php if(isset($_SESSION['login']))
+							{
+							?>
+							<li><a href="Personnel.php">Espace personnel</a></li>
+							<li><a href="do_connexion.php">Déconnexion</a></li>
+							<?php 
+							}
+							else
+							{ ?> 
+							<li><a href="client.php">Connexion</a></li>
+							<?php
+							}
+							?>
 						  </ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

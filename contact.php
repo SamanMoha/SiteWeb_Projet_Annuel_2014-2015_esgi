@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<div id="tete"><?php include("entete.html"); ?></div><!-- en tête de la page -->
+		<div id="tete"><?php include("entete.php"); ?></div><!-- en tête de la page -->
 		<div id="cadre"> <!-- corps de la page  -->
 			<div class="jumbotron jumbotron-sm">
 				<div class="container">
@@ -31,14 +31,14 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="name">Nom</label>
-										<input type="text" class="form-control" id="name" placeholder="Votre nom" required="required" />
+										<input type="text" name="nom" class="form-control" id="name" placeholder="Votre nom" required="required" />
 									</div>
 									<div class="form-group">
 										<label for="email">Email</label>
 										<div class="input-group">
 											<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
 											</span>
-											<input type="email" class="form-control" id="email" placeholder="Votre email" required="required" />
+											<input type="email" name="email" class="form-control" id="email" placeholder="Votre email" required="required" />
 										</div>
 									</div>
 									<div class="form-group">

@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<div id="tete"><?php include("entete.html"); ?></div><!-- en tête de la page -->
+		<div id="tete"><?php include("entete.php"); ?></div><!-- en tête de la page -->
 		<div id="cadre"> <!-- corps de la page  -->
 			 
 			<div class="grostitre">Espace client</div>
@@ -24,12 +24,11 @@
 								<strong> Identifiez-vous</strong>
 							</div>
 							<div class="panel-body">
-								<form role="form" action="#" method="POST">
+								<form role="form" method=POST action="do_connexion.php">
 									<fieldset>
 										<div class="row">
 											<div class="center-block">
-												<img class="profile-img"
-													src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
+												<img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
 											</div>
 										</div>
 										<div class="row">
@@ -39,7 +38,7 @@
 														<span class="input-group-addon">
 															<i class="glyphicon glyphicon-user"></i>
 														</span> 
-														<input class="form-control" placeholder="Pseudo" name="loginname" type="text" autofocus>
+														<input class="form-control" placeholder="Pseudo" name="login" type="text" autofocus>
 													</div>
 												</div>
 												<div class="form-group">
@@ -47,7 +46,7 @@
 														<span class="input-group-addon">
 															<i class="glyphicon glyphicon-lock"></i>
 														</span>
-														<input class="form-control" placeholder="Mot de passe" name="password" type="password" value="">
+														<input class="form-control" placeholder="Mot de passe" name="mdp" type="password" value="">
 													</div>
 												</div>
 												<div class="form-group">
@@ -59,7 +58,7 @@
 								</form>
 							</div>
 							<div class="panel-footer ">
-								Vous n'avez pas de compte ? <a href="inscription.html" onClick=""> Créer un compte </a>
+								Vous n'avez pas de compte ? <a href="inscription.php" onClick=""> Créer un compte </a>
 							</div>
 						</div>
 					</div>
