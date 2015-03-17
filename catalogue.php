@@ -10,36 +10,7 @@
 	</head>
 
 	<body>
-		<div id="tete"> <!-- en tête de la page -->
-			<nav class="navbar navbar-default" role="navigation">
-				  <div class="container">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						  </button>
-						  <div class="navbar-brand navbar-brand-centered"><a href="index.html">Devis'Me</a></div>
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="navbar-brand-centered">
-						  <ul class="nav navbar-nav">
-							<li><a href="index.html">Accueil</a></li>
-							<li><a href="devis.html">Application</a></li>
-							<li><a href="catalogue.html">Catalogue</a></li>
-						  </ul>
-						  <ul class="nav navbar-nav navbar-right">
-							<li><a href="client.html">Espace client</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="plugin.html">Gestion plug-in</a></li>		        
-						  </ul>
-						</div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-			</nav>	
-		</div>
+		<div id="tete"><?php include("entete.html"); ?></div><!-- en tête de la page -->
 		<div id="cadre"> <!-- corps de la page  -->
 			<div class="grostitre">Catalogue</div>
 			<br/><br/>
@@ -47,10 +18,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h1 class="text-center">
-							No more tables.
+							Découvrez
 						</h1>
 						<h3 class="text-center">
-							Resize the browser screen to see how the table changes
+							la liste de nos matériaux proposés.
 						</h3>
 					</div>
 					<div id="no-more-tables">
@@ -196,16 +167,6 @@
 				</div>
 			</div>
 		</div><br/>
-		<div id="pied"> <!-- en tête de la page -->
-			<p>Copyright © 2015 Devis'Me - All rights reserved. 
-				<!--<a href="#"><span class="label label-info">HTML5</span></a> 
-				<a href="#"><span class="label label-info">CSS3</span></a> 
-				<a href="#"><span class="label label-info">Bootstrap</span></a> 
-				<a href="#"><span class="label label-info">PHP5</span></a>-->
-				| <i class="icon-user"></i> <a href="contact.html">Page d'accueil</a> 
-				| <i class="icon-user"></i> <a href="contact.html">Contact</a> 
-				| <i class="icon-calendar"></i> feb 5th, 2015 at 4:20 pm
-			</p>
-		</div>
+		<div id="pied"><?php include("pied.html"); ?></div>
 	</body>
 </html>

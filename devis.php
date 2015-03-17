@@ -10,36 +10,7 @@
 	</head>
 
 	<body>
-		<div id="tete"> <!-- en tête de la page -->
-			<nav class="navbar navbar-default" role="navigation">
-				  <div class="container">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						  </button>
-						  <div class="navbar-brand navbar-brand-centered"><a href="index.html">Devis'Me</a></div>
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="navbar-brand-centered">
-						  <ul class="nav navbar-nav">
-							<li><a href="index.html">Accueil</a></li>
-							<li><a href="devis.html">Application</a></li>
-							<li><a href="catalogue.html">Catalogue</a></li>
-						  </ul>
-						  <ul class="nav navbar-nav navbar-right">
-							<li><a href="client.html">Espace client</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="plugin.html">Gestion plug-in</a></li>		        
-						  </ul>
-						</div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-			</nav>	
-		</div>
+		<div id="tete"><?php include("entete.html"); ?></div><!-- en tête de la page -->
 		<div id="cadre"> <!-- corps de la page  -->
 			<div class="grostitre">Manuel d'utilisation de l'application Devis'Me</div>
 			<br/><br/>
@@ -53,13 +24,13 @@
 							</div>
 							<h4>Introduction</h4>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-								ante.
+								Devis'Me est une application de création de devis spécialisé dans l'immobilier.
+
 							</p>
 						</div>
 						<div class="blockquote-box blockquote-primary clearfix">
 							<div class="square pull-left">
-								<img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/5347a3ae01925b2052000001/attachments/original/1403304687/icon-T.png?1403304687" alt="" class="" />
+								<img src="http://www.brightcomputing.com/pics/cdadapco_logo_50.png" alt="" class="" />
 							</div>
 							<h4>Installation</h4>
 							<p>
@@ -69,7 +40,7 @@
 						</div>
 						<div class="blockquote-box blockquote-success clearfix">
 							<div class="square pull-left">
-								<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/v/t1.0-1/p50x50/10173679_596244660471955_2944547139921847207_n.png?oh=7302b189a8de0339ec23ca954b1423a1&oe=5549DF49&__gda__=1432208114_f1741b308b9670f136e9761d8ee5aa78" alt="" class="" />
+								<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/WHATWG_logo.svg/64px-WHATWG_logo.svg.png" alt="" class="" />
 							</div>
 							<h4>Premier pas</h4>
 							<p>
@@ -81,7 +52,7 @@
 					<div class="col-md-6">
 						<div class="blockquote-box blockquote-info clearfix">
 							<div class="square pull-left">
-								<img src="https://media.licdn.com/media/p/5/005/02c/032/1ef42fc.png" alt="" class="" />
+								<img src="http://www.pylint.org/assets/img/arch.png" alt="" class="" />
 							</div>
 							<h4>Exporter / Importer un projet</h4>
 							<p>
@@ -114,16 +85,6 @@
 				</div>
 			</div>
 		</div><br/>
-		<div id="pied"> <!-- en tête de la page -->
-			<p>Copyright © 2015 Devis'Me - All rights reserved. 
-				<!--<a href="#"><span class="label label-info">HTML5</span></a> 
-				<a href="#"><span class="label label-info">CSS3</span></a> 
-				<a href="#"><span class="label label-info">Bootstrap</span></a> 
-				<a href="#"><span class="label label-info">PHP5</span></a>-->
-				| <i class="icon-user"></i> <a href="contact.html">Page d'accueil</a> 
-				| <i class="icon-user"></i> <a href="contact.html">Contact</a> 
-				| <i class="icon-calendar"></i> feb 5th, 2015 at 4:20 pm
-			</p>
-		</div>
+		<div id="pied"><?php include("pied.html"); ?></div>
 	</body>
 </html>

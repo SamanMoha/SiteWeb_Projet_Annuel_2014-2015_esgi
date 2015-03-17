@@ -10,40 +10,7 @@
 	</head>
 
 	<body>
-		<div id="tete"> <!-- en tête de la page -->
-			<nav class="navbar navbar-default" role="navigation">
-				  <div class="container">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						  </button>
-						  <div class="navbar-brand navbar-brand-centered"><a href="index.html">Devis'Me</a></div>
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="navbar-brand-centered">
-						  <ul class="nav navbar-nav">
-							<li><a href="index.html">Accueil</a></li>
-							<li><a href="devis.html">Application</a></li>
-							<li><a href="catalogue.html">Catalogue</a></li>
-						  </ul>
-						  <ul class="nav navbar-nav navbar-right">
-							<li><a href="client.html">Espace client</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="plugin.html">Gestion plug-in</a></li>		        
-						  </ul>
-						</div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-			</nav>	
-		</div>
-
-	
-	
-		
+		<div id="tete"><?php include("entete.html"); ?></div><!-- en tête de la page -->
 		<div id="cadre"> <!-- corps de la page  -->
 			<div class="jumbotron jumbotron-sm">
 				<div class="container">
@@ -59,21 +26,20 @@
 				<div class="row">
 					<div class="col-md-8">
 						<div class="well well-sm">
-							<form>
+							<form method="POST" action="do_sendform.php">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="name">
-											Nom</label>
+										<label for="name">Nom</label>
 										<input type="text" class="form-control" id="name" placeholder="Votre nom" required="required" />
 									</div>
 									<div class="form-group">
-										<label for="email">
-											Email</label>
+										<label for="email">Email</label>
 										<div class="input-group">
 											<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
 											</span>
-											<input type="email" class="form-control" id="email" placeholder="Votre email" required="required" /></div>
+											<input type="email" class="form-control" id="email" placeholder="Votre email" required="required" />
+										</div>
 									</div>
 									<div class="form-group">
 										<label for="subject">
@@ -88,15 +54,13 @@
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="name">
-											Message</label>
+										<label for="name">Message</label>
 										<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
 											placeholder="Message"></textarea>
 									</div>
 								</div>
 								<div class="col-md-12">
-									<button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-										Envoyer Message</button>
+									<button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Envoyer </button>
 								</div>
 							</div>
 							</form>
@@ -122,16 +86,6 @@
 				</div>
 			</div>
 		</div><br/>
-		<div id="pied"> <!-- en tête de la page -->
-			<p>Copyright © 2015 Devis'Me - All rights reserved. 
-				<!--<a href="#"><span class="label label-info">HTML5</span></a> 
-				<a href="#"><span class="label label-info">CSS3</span></a> 
-				<a href="#"><span class="label label-info">Bootstrap</span></a> 
-				<a href="#"><span class="label label-info">PHP5</span></a>-->
-				| <i class="icon-user"></i> <a href="contact.html">Page d'accueil</a> 
-				| <i class="icon-user"></i> <a href="contact.html">Contact</a> 
-				| <i class="icon-calendar"></i> feb 5th, 2015 at 4:20 pm
-			</p>
-		</div>
+		<div id="pied"><?php include("pied.html"); ?></div>
 	</body>
 </html>
